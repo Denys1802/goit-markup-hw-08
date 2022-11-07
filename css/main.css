@@ -634,6 +634,7 @@ body {
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
+    width: 100%;
     height: auto;
   }
 }
@@ -952,6 +953,7 @@ body {
 }
 .team__item {
   max-width: 450px;
+  width: 100%;
   background-color: var(--white-color-text);
   -webkit-box-shadow: var(--team-item-shadow);
           box-shadow: var(--team-item-shadow);
