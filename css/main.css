@@ -318,6 +318,11 @@ body {
   font-size: 34px;
   line-height: 1.176;
 }
+@media screen and (max-width: 380px) {
+  .menu-contacts__link-phone {
+    font-size: 26px;
+  }
+}
 .menu-contacts__link-mail {
   font-size: 24px;
   line-height: 1.16;
