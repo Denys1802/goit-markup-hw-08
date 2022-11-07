@@ -473,8 +473,8 @@ body {
   margin: 0 auto;
   padding: 118px 0;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main-bg/Img@1x.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main-bg/Img@1x.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main-bg/img@1x.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main-bg/img@1x.jpg");
   background-repeat: no-repeat;
   background-color: var(--bg-color);
   background-size: cover;
@@ -532,12 +532,12 @@ body {
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .decision {
-    background-image: url("../images/main-bg/Img@2x.jpg");
+    background-image: url("../images/main-bg/img@2x.jpg");
   }
 }
 @media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 2.9583333333333335), screen and (min-resolution: 284dpi), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 3dppx) {
   .decision {
-    background-image: url("../images/main-bg/Img@3x.jpg");
+    background-image: url("../images/main-bg/img@3x.jpg");
   }
 }
 
