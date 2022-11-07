@@ -261,6 +261,7 @@ body {
   background-color: var(--white-color-text);
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  overflow: auto;
   z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -329,6 +330,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .menu-social__link {
   font-weight: 500;
@@ -340,7 +346,16 @@ body {
 }
 .menu-social__border {
   margin: 0 10px;
+  height: 22px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+@media screen and (max-width: 440px) {
+  .menu-social__item {
+    margin-bottom: 10px;
+  }
+  .menu-social__border {
+    border-right: none;
+  }
 }
 
 .logo {
@@ -532,12 +547,14 @@ body {
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .decision {
-    background-image: url("../images/main-bg/img@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main-bg/img@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main-bg/img@2x.jpg");
   }
 }
 @media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 2.9583333333333335), screen and (min-resolution: 284dpi), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 3dppx) {
   .decision {
-    background-image: url("../images/main-bg/img@3x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main-bg/img@3x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main-bg/img@3x.jpg");
   }
 }
 

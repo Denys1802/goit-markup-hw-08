@@ -34,7 +34,7 @@
 	height: 100vh;
 	background-color: var(--white-color-text);
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-
+	overflow: auto;
 	z-index: 999;
 	transform: translateX(100%);
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -107,6 +107,8 @@
 
 .menu-social {
 	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
 
 	&__link {
 		font-weight: 500;
@@ -120,6 +122,17 @@
 
 	&__border {
 		margin: 0 10px;
+		height: 22px;
 		border-right: 1px solid rgba(33, 33, 33, 0.2);
+	}
+
+	@media screen and (max-width: 440px) {
+		&__item {
+			margin-bottom: 10px;
+		}
+
+		&__border {
+			border-right: none;
+		}
 	}
 }
