@@ -1,17 +1,19 @@
 .client {
 	&__title {
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 	}
 
 	&__list {
-		@extend %flexGap;
-		justify-content: space-between;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 30px;
 	}
 
 	&__link {
 		@extend %centeredFlex;
 
-		width: 170px;
+		width: 210px;
 		height: 92px;
 		margin: 0 auto;
 
@@ -23,6 +25,12 @@
 		&:hover {
 			fill: var(--accent-color);
 			border: 1px solid var(--accent-color);
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		&__link {
+			width: 170px;
 		}
 	}
 }

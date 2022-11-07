@@ -1,17 +1,17 @@
 .team {
 	background-color: var(--button-bg-color);
 	&__title {
-		margin-bottom: 50px;
-	}
-
-	&__list {
-		@extend %flexGap;
+		margin-bottom: 30px;
 	}
 
 	&__item {
+		max-width: 450px;
 		background-color: var(--white-color-text);
 		box-shadow: var(--team-item-shadow);
 		border-radius: 0px 0px 4px 4px;
+		&:not(:last-child) {
+			margin-bottom: var(--margin-li-item);
+		}
 	}
 
 	&__content {
@@ -33,5 +33,28 @@
 		font-size: 16px;
 		line-height: 1.18;
 		letter-spacing: 0.03em;
+	}
+
+	@media screen and (min-width: 768px) {
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+
+			gap: 30px;
+		}
+		&__item {
+			max-width: 354px;
+			flex: 0 1 50%;
+			&:not(:last-child) {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		&__item {
+			flex: 0 1 25%;
+			max-width: 270px;
+		}
 	}
 }
