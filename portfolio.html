@@ -18,90 +18,145 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-		<div class="header__main container ">
-			<a href="#" class="logo logo__header"><span class="logo__accent">Web</span>Studio</a>
-			<button  class="menu-toggle js-open-menu"
-			aria-expanded="false"
-			aria-controls="mobile-menu" type="button">
-				<svg width="40" height="40" aria-label="Перемикач мобільного меню">
-					<use class="menu-open " href="./images/icons.svg#icon-menu_open"></use>
-				</svg>
-			</button>
-			<nav class="header-nav">
-				<ul class="header-nav__list">
-					<li class="header-nav__item"><a href="./index.html" class="header-nav__link link">Студія</a></li>
-					<li class="header-nav__item header-nav__item--active"><a href="./portfolio.html" class="header-nav__link link">Портфоліо</a></li>
-					<li class="header-nav__item"><a href="#" class="header-nav__link link">Контакти</a></li>
-				</ul>
-			</nav>
-			<ul class="header-contacts">	
-				<li class="header-contacts__item">
-					<a href="mailto:info@devstudio.com" class="header-contacts__link link">
-						<svg class="header-contacts__mail">
-							<use href="./images/icons.svg#icon-mail"></use>
-						</svg>
-						info@devstudio.com
-					</a>
-				</li>
-				<li class="header-contacts__item">
-					<a href="tel:+380961111111" class="header-contacts__link link">
-						<svg class="header-contacts__phone">
-							<use href="./images/icons.svg#icon-phone"></use>
-						</svg>
-						+38 096 111 11 11
-					</a>
-				</li>	
-			</ul>
-	   </div>
-	</header>
-	<div class="menu-container js-menu-container"">
-		<button  class="menu-toggle js-close-menu"
-		 type="button">
-			<svg class="menu-close" width="40" height="40" aria-label="Перемикач мобільного меню">
-				<use  href="./images/icons.svg#icon-menu_close"></use>
-			</svg>
-		</button>
-		<div class="menu-nav__container">
-			<nav class="menu-nav">
-				<ul class="menu-nav__list">
-					<li class="menu-nav__item"><a href="./index.html" class="menu-nav__link">Студія</a></li>
-					<li class="menu-nav__item"><a href="./portfolio.html" class="menu-nav__link">Портфоліо</a></li>
-					<li class="menu-nav__item"><a href="#" class="menu-nav__link">Контакти</a></li>
-				</ul>
-			</nav>
-			<ul class="menu-contacts">
-				<li class="menu-contacts__item">
-					<a href="tel:+380961111111" class="menu-contacts__link menu-contacts__link-phone">
-						+38 096 111 11 11
-					</a>
-				</li>		
-				<li class="menu-contacts__item">
-					<a href="mailto:info@devstudio.com" class="menu-contacts__link menu-contacts__link-mail">
-						info@devstudio.com
-					</a>
-				</li>
-			</ul>
-			<ul class="menu-social">
-				<li class="menu-social__item">
-					<a href="https://www.instagram.com
-					" class="menu-social__link" target="_blank">Instagram</a>
-				</li>
-				<span class="menu-social__border"></span>
-				<li class="menu-social__item">
-					<a href="https://twitter.com" class="menu-social__link" target="_blank">Twitter</a>
-				</li>
-				<span class="menu-social__border"></span>
-				<li class="menu-social__item">
-					<a href="https://uk-ua.facebook.com
-					" class="menu-social__link" target="_blank">Facebook</a>
-				</li>
-				<span class="menu-social__border"></span>
-				<li class="menu-social__item">
-					<a href="https://www.linkedin.com" class="menu-social__link" target="_blank">LinkedIn</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+      <div class="header__main container">
+        <a href="#" class="logo logo__header"
+          ><span class="logo__accent">Web</span>Studio</a
+        >
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          type="button"
+        >
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use
+              class="menu-open"
+              href="./images/icons.svg#icon-menu_open"
+            ></use>
+          </svg>
+        </button>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a href="./index.html" class="header-nav__link link">Студія</a>
+            </li>
+            <li class="header-nav__item header-nav__item--active">
+              <a href="./portfolio.html" class="header-nav__link link"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contacts">
+          <li class="header-contacts__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="header-contacts__link link"
+            >
+              <svg class="header-contacts__mail">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header-contacts__item">
+            <a href="tel:+380961111111" class="header-contacts__link link">
+              <svg class="header-contacts__phone">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="menu-container js-menu-container" id="menu-container">
+      <button class="menu-toggle js-close-menu" type="button">
+        <svg
+          class="menu-close"
+          width="40"
+          height="40"
+          aria-label="Перемикач мобільного меню"
+        >
+          <use href="./images/icons.svg#icon-menu_close"></use>
+        </svg>
+      </button>
+      <div class="menu-nav__container">
+        <nav class="menu-nav">
+          <ul class="menu-nav__list">
+            <li class="menu-nav__item">
+              <a href="./index.html" class="menu-nav__link">Студія</a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="./portfolio.html" class="menu-nav__link">Портфоліо</a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="#" class="menu-nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="menu-contacts">
+          <li class="menu-contacts__item">
+            <a
+              href="tel:+380961111111"
+              class="menu-contacts__link menu-contacts__link-phone"
+            >
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="menu-contacts__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="menu-contacts__link menu-contacts__link-mail"
+            >
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="menu-social">
+          <li class="menu-social__item">
+            <a
+              href="https://www.instagram.com
+					"
+              class="menu-social__link"
+              target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li><span class="menu-social__border"></span></li>
+          <li class="menu-social__item">
+            <a
+              href="https://twitter.com"
+              class="menu-social__link"
+              target="_blank"
+              >Twitter</a
+            >
+          </li>
+          <li><span class="menu-social__border"></span></li>
+          <li class="menu-social__item">
+            <a
+              href="https://uk-ua.facebook.com
+					"
+              class="menu-social__link"
+              target="_blank"
+              >Facebook</a
+            >
+          </li>
+          <li><span class="menu-social__border"></span></li>
+          <li class="menu-social__item">
+            <a
+              href="https://www.linkedin.com"
+              class="menu-social__link"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <main>
       <!-- WORKS -->
@@ -133,9 +188,16 @@
             <li class="works-card__item">
               <div class="works-card__image">
                 <a href="#" class="works-card__link">
-                  <img srcset="./images/portfolio01/img@1x.jpg 354w, ./images/portfolio01/img@2x.jpg 708w, ./images/portfolio03/img@3x.jpg 1062w" 
-						src="./images/portfolio01/img@1x.jpg" alt="Ноутбук" 
-						sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw" />
+                  <img
+                    srcset="
+                      ./images/portfolio01/img@1x.jpg  354w,
+                      ./images/portfolio01/img@2x.jpg  708w,
+                      ./images/portfolio03/img@3x.jpg 1062w
+                    "
+                    src="./images/portfolio01/img@1x.jpg"
+                    alt="Ноутбук"
+                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
+                  />
                   <p class="works-card__modal">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -152,11 +214,15 @@
               <div class="works-card__image">
                 <a href="#" class="works-card__link">
                   <img
-						srcset="./images/portfolio02/img@1x.jpg 354w, ./images/portfolio02/img@2x.jpg 708w, ./images/portfolio02/img@3x.jpg 1062w" 
+                    srcset="
+                      ./images/portfolio02/img@1x.jpg  354w,
+                      ./images/portfolio02/img@2x.jpg  708w,
+                      ./images/portfolio02/img@3x.jpg 1062w
+                    "
                     src="./images/portfolio02/img@1x.jpg"
                     alt="Два
                   баскетболіста"
-						sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
+                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
                   />
                   <p class="works-card__modal">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -176,10 +242,14 @@
               <div class="works-card__image">
                 <a href="#" class="works-card__link">
                   <img
-						srcset="./images/portfolio03/img@1x.jpg 354w, ./images/portfolio03/img@2x.jpg 708w, ./images/portfolio03/img@3x.jpg 1062w" 
+                    srcset="
+                      ./images/portfolio03/img@1x.jpg  354w,
+                      ./images/portfolio03/img@2x.jpg  708w,
+                      ./images/portfolio03/img@3x.jpg 1062w
+                    "
                     src="./images/portfolio03/img@1x.jpg"
                     alt="Логотип ресторану"
-						  sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
+                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
                   />
                   <p class="works-card__modal">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -196,10 +266,16 @@
             <li class="works-card__item">
               <div class="works-card__image">
                 <a href="#" class="works-card__link">
-                  <img 
-						srcset="./images/portfolio04/img@1x.jpg 354w, ./images/portfolio04/img@2x.jpg 708w, ./images/portfolio04/img@3x.jpg 1062w" 
-						src="./images/portfolio04/img@1x.jpg" alt="Навушники" 
-						sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"/>
+                  <img
+                    srcset="
+                      ./images/portfolio04/img@1x.jpg  354w,
+                      ./images/portfolio04/img@2x.jpg  708w,
+                      ./images/portfolio04/img@3x.jpg 1062w
+                    "
+                    src="./images/portfolio04/img@1x.jpg"
+                    alt="Навушники"
+                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
+                  />
                   <p class="works-card__modal">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -216,10 +292,14 @@
               <div class="works-card__image">
                 <a href="#" class="works-card__link">
                   <img
-						srcset="./images/portfolio05/img@1x.jpg 354w, ./images/portfolio05/img@2x.jpg 708w, ./images/portfolio05/img@3x.jpg 1062w" 
+                    srcset="
+                      ./images/portfolio05/img@1x.jpg  354w,
+                      ./images/portfolio05/img@2x.jpg  708w,
+                      ./images/portfolio05/img@3x.jpg 1062w
+                    "
                     src="./images/portfolio05/img@1x.jpg"
                     alt="Дві коробки"
-						  sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
+                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
                   />
                   <p class="works-card__modal">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -236,10 +316,16 @@
             <li class="works-card__item">
               <div class="works-card__image">
                 <a href="#" class="works-card__link">
-                  <img 
-						srcset="./images/portfolio06/img@1x.jpg 354w, ./images/portfolio06/img@2x.jpg 708w, ./images/portfolio06/img@3x.jpg 1062w" 
-						src="./images/portfolio06/img@1x.jpg" alt="Монітор" 
-						sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"/>
+                  <img
+                    srcset="
+                      ./images/portfolio06/img@1x.jpg  354w,
+                      ./images/portfolio06/img@2x.jpg  708w,
+                      ./images/portfolio06/img@3x.jpg 1062w
+                    "
+                    src="./images/portfolio06/img@1x.jpg"
+                    alt="Монітор"
+                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
+                  />
                   <p class="works-card__modal">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -256,10 +342,15 @@
               <div class="works-card__image">
                 <a href="#" class="works-card__link">
                   <img
-						srcset="./images/portfolio07/img@1x.jpg 354w, ./images/portfolio07/img@2x.jpg 708w, ./images/portfolio07/img@3x.jpg 1062w" 
-						src="./images/portfolio07/img@1x.jpg" alt="Книжка"
-						
-						sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw" />
+                    srcset="
+                      ./images/portfolio07/img@1x.jpg  354w,
+                      ./images/portfolio07/img@2x.jpg  708w,
+                      ./images/portfolio07/img@3x.jpg 1062w
+                    "
+                    src="./images/portfolio07/img@1x.jpg"
+                    alt="Книжка"
+                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
+                  />
                   <p class="works-card__modal">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -275,10 +366,16 @@
             <li class="works-card__item">
               <div class="works-card__image">
                 <a href="#" class="works-card__link">
-                  <img 
-						srcset="./images/portfolio08/img@1x.jpg 354w, ./images/portfolio08/img@2x.jpg 708w, ./images/portfolio08/img@3x.jpg 1062w" 
-						src="./images/portfolio08/img@1x.jpg" alt="Стікер" 
-						sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"/>
+                  <img
+                    srcset="
+                      ./images/portfolio08/img@1x.jpg  354w,
+                      ./images/portfolio08/img@2x.jpg  708w,
+                      ./images/portfolio08/img@3x.jpg 1062w
+                    "
+                    src="./images/portfolio08/img@1x.jpg"
+                    alt="Стікер"
+                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
+                  />
                   <p class="works-card__modal">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -295,10 +392,14 @@
               <div class="works-card__image">
                 <a href="#" class="works-card__link">
                   <img
-						srcset="./images/portfolio09/img@1x.jpg 354w, ./images/portfolio09/img@2x.jpg 708w, ./images/portfolio09/img@3x.jpg 1062w" 
+                    srcset="
+                      ./images/portfolio09/img@1x.jpg  354w,
+                      ./images/portfolio09/img@2x.jpg  708w,
+                      ./images/portfolio09/img@3x.jpg 1062w
+                    "
                     src="./images/portfolio09/img@1x.jpg"
                     alt="Робота за ноутбуком"
-						  sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
+                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100vw"
                   />
                   <p class="works-card__modal">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -405,13 +506,13 @@
         </div>
       </footer>
     </main>
-	 <script
-	defer
-	src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-	integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-	crossorigin="anonymous"
- ></script>
- <script defer src="js/mobile-menu.js"></script>
-	<script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
