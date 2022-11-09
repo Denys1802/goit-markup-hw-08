@@ -1,12 +1,13 @@
 .button-list {
 	display: flex;
-	justify-content: center;
-	margin-bottom: 50px;
+	flex-wrap: wrap;
+	margin-bottom: 35px;
 
 	list-style: none;
 	&__item {
 		&:not(:last-child) {
 			margin-right: 8px;
+			margin-bottom: 15px;
 		}
 	}
 
@@ -35,18 +36,31 @@
 			box-shadow: var(--works-button-shadow);
 		}
 	}
+
+	@media screen and (min-width: 768px) {
+		justify-content: center;
+		margin-bottom: 50px;
+		&__item {
+			&:not(:last-child) {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 
 .works-card {
-	@extend %flexGap;
 	&__item {
-		max-width: 370px;
+		max-width: 450px;
+		width: 100%;
 		border: 1px solid var(--header-border);
 
 		transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 		&:hover {
 			box-shadow: var(--works-button-shadow);
+		}
+		&:not(:last-child) {
+			margin-bottom: 30px;
 		}
 	}
 
@@ -59,7 +73,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-
+		height: 100%;
 		padding: 63px 24px;
 
 		font-weight: 400;
@@ -70,7 +84,7 @@
 		color: var(--white-color-text);
 		background-color: rgba(33, 150, 243, 0.9);
 
-		transform: translateY(100%);
+		transform: translateY(101%);
 
 		transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
@@ -93,6 +107,28 @@
 		line-height: 1.88;
 		letter-spacing: 0.03em;
 		color: var(--main-color-text);
+	}
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex: 0 1 50%;
+		flex-wrap: wrap;
+
+		gap: 30px;
+
+		&__item {
+			max-width: 354px;
+			&:not(:last-child) {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		flex: 0 1 33.3333%;
+		&__item {
+			max-width: 370px;
+		}
 	}
 }
 
